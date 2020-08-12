@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Button from './Button'
 
-export default function Counter() {
-  const [counter, setCounter] = useState(0)
+export default function Counter({ counter, countUp, countDown }) {
   const isZero = counter === 0
 
   return (
@@ -12,12 +11,4 @@ export default function Counter() {
       <Button text="Increase" onClick={countUp} />
     </div>
   )
-
-  function countUp() {
-    setCounter(counter + 1)
-  }
-
-  function countDown() {
-    setCounter(counter - 1)
-  }
 }
