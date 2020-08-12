@@ -1,0 +1,12 @@
+.Button {
+  background: hotpink;
+  color: white;
+  border: none;
+  padding: 12px 6px;
+  margin: 2px;
+  font-size: inherit;
+}
+
+.Button:disabled {
+  opacity: 0.5;
+}
